@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Objectif - Thermomètre numérique</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".">Thermomètre numérique</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="active">
+                    <a href=".">Objectif</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="sujet/">Sujet</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="ressources/">Ressources</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="sujet/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#fonctions-du-thermometre">Fonctions du thermomètre</a></li>
+        
+    
+        <li class="main "><a href="#objectif">Objectif</a></li>
+        
+    
+        <li class="main "><a href="#cahier-des-charges">Cahier des charges</a></li>
+        
+    
+        <li class="main "><a href="#moyens">Moyens</a></li>
+        
+    
+        <li class="main "><a href="#compte-rendu">Compte-rendu</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><br /></p>
+<p><img alt="digital thermometer" src="img/thermometre_digital.png" /></p>
+<h1 id="fonctions-du-thermometre">Fonctions du thermomètre</h1>
+<pre><code class="language-txt">- acquérir la température d'une pièce intérieure
+- afficher la température sur un afFicheur LCD
+</code></pre>
+<p><br /></p>
+<h1 id="objectif">Objectif</h1>
+<pre><code class="language-txt">- valider la résolution obtenue (calculée et simulée) par rapport à la précision du capteur.
+</code></pre>
+<blockquote>
+<p>Remarque : il faut que la résolution soit plus petite que la précision du capteur afin de bénéficier de cette précision.</p>
+<p>Pour plus d'informations cliquer sur le lien suivant : <a href="https://sensorpartners.com/fr/base-de-connaissances/resolution-et-precision-des-capteurs/" target="_blank">Sensor Partners</a>.</p>
+</blockquote>
+<p><br /></p>
+<h1 id="cahier-des-charges">Cahier des charges</h1>
+<pre><code class="language-txt">- résolution minimale attendue de la chaîne de mesure : 0,15°C
+- plage de mesure : [0°C ; 100°C]
+</code></pre>
+<p><br /></p>
+<h1 id="moyens">Moyens</h1>
+<pre><code class="language-txt">- Isis : logiciel de saisie de schéma et de simulation
+- Arduino : environnement de développement intégré
+</code></pre>
+<p><br /></p>
+<h1 id="compte-rendu">Compte-rendu</h1>
+<blockquote>
+<p>Vous répondrez aux questions Qx. sur un document numérique LibreOffice.
+À la fin du TD vous remettrez dans un dossier zippé nommé <code>digital_thermometer_votre_nom.zip</code> les fichiers suivants :</p>
+</blockquote>
+<pre><code>├───CR-Ciel.odt
+├───digital_thermometer.dsn      
+├───arduino_source
+│      ├───arduino_source.ino
+</code></pre>
+<blockquote>
+<p>Modèle de compte-rendu : <a href="../files/CR-Ciel.odt" target="_blank">CR-Ciel.odt</a>.</p>
+</blockquote>
+<p><br />
+<br /></p>
+<blockquote>
+<p><img alt="Creative Commons" src="img/cc-by-nc-sa.png" />
+Auteur : Franck RIVIER - lycée Rouvière (TOULON)</p>
+</blockquote></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="search/main.js"></script>
+    </body>
+</html>

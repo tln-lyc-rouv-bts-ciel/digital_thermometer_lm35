@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Sujet - Thermomètre numérique</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Thermomètre numérique</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Objectif</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="./">Sujet</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../ressources/">Ressources</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../ressources/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#simulation-isis">Simulation Isis</a></li>
+        
+    
+        <li class="main "><a href="#etude-du-capteur">Étude du capteur</a></li>
+        
+    
+        <li class="main "><a href="#etude-du-can">Étude du CAN</a></li>
+        
+    
+        <li class="main "><a href="#formule-de-la-tension">Formule de la tension</a></li>
+        
+    
+        <li class="main "><a href="#formule-de-la-temperature">Formule de la température</a></li>
+        
+    
+        <li class="main "><a href="#calcul-de-la-temperature">Calcul de la température</a></li>
+        
+    
+        <li class="main "><a href="#amelioration">Amélioration</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><br /></p>
+<p><img alt="isis schematics" src="../img/tm35.png" /></p>
+<h1 id="simulation-isis">Simulation Isis</h1>
+<blockquote>
+<p><strong>Objectif</strong> : déterminer la résolution du thermonmètre</p>
+</blockquote>
+<pre><code class="language-txt">- Ouvrir le fichier Isis qui simule le comportement du thermomètre et qui affiche sur l'afficheur LCD le code N en décimal en sortie du CAN.
+</code></pre>
+<blockquote>
+<p><a href="../files/digital_thermometer.zip" target="_blank">Thermomètre numérique Isis</a></p>
+</blockquote>
+<pre><code class="language-txt">- Simuler le thermomètre numérique.
+- Faire varier la température du LM35 en cliquant sur les flèches et déterminer la plus petite variation de température qui permet de faire varier la sortie N du CAN de 1 LSB.
+- Vérifier que le thermomètre se comporte correctement dans toute la plage de mesure.
+</code></pre>
+<blockquote>
+<p>Astuce : il est possible de modifier le pas de variation de la température en double-cliquant sur le LM35 et en mettant une valeur de 1 par exemple dans le champ <code>Temperature step(°C)</code>.</p>
+</blockquote>
+<pre><code class="language-txt">    Q1. En déduire la résolution du thermomètre en °C/LSB.
+</code></pre>
+<p><br /></p>
+<h1 id="etude-du-capteur">Étude du capteur</h1>
+<pre><code>À partir de la documentation du LM35     
+    Q2. Relever la précision du LM35 pour une température ambiante
+    Q3. Relever la précision du LM35 pour une plage de variation de la température comprise entre 0°C et 100°C.
+    Q4. Relever la sensibilité du LM35 (en mV/°C).
+</code></pre>
+<blockquote>
+<p><a href="../files/lm35.pdf" target="_blank">Documentation du lm35</a></p>
+</blockquote>
+<p><br /></p>
+<h1 id="etude-du-can">Étude du CAN</h1>
+<pre><code>À partir de la documentation Arduino : 
+    Q5. Calculer le quantum q du CAN de la carte Arduino Uno.
+</code></pre>
+<blockquote>
+<p><a href="https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/" target="_blank">Arduino Docs - analogRead()</a></p>
+</blockquote>
+<p><br /></p>
+<h1 id="formule-de-la-tension">Formule de la tension</h1>
+<blockquote>
+<p><strong>Méthode</strong> : à partir de la sortie N du CAN on peut calculer une approximation de la tension Us présente en entrée du CAN : Us = N * q</p>
+</blockquote>
+<pre><code>    Q6. Donner la formule de Us en fonction de N.
+</code></pre>
+<p><br /></p>
+<h1 id="formule-de-la-temperature">Formule de la température</h1>
+<blockquote>
+<p><strong>Méthode</strong> : à partir de la sensibilité du LM35 on obtient une relation entre la tension Us et la température T en °C.</p>
+</blockquote>
+<pre><code>    Q7. Donner la formule de Us en fonction de T.
+</code></pre>
+<p><br /> </p>
+<h1 id="calcul-de-la-temperature">Calcul de la température</h1>
+<blockquote>
+<p><strong>Définition</strong> : la résolution est la plus petite variation de la mesure qui provoque un changement de 1 LSB en sortie du CAN.</p>
+</blockquote>
+<pre><code>    Q8. Grâce aux deux formules précédente donner la formule qui permettra à l'arduino Uno de calculer la température en fonction de N.
+    Q9. En déduire la résolution du thermomètre en °C/LSB.
+    Q10. Est-ce que cette résolution est satisfaisante (voir cahier des charges) ?
+</code></pre>
+<p><br /></p>
+<h1 id="amelioration">Amélioration</h1>
+<blockquote>
+<p><strong>Méthode</strong> : la résolution peut être améliorée de deux manières :</p>
+</blockquote>
+<ol>
+<li>Augmenter la sensibilité du capteur (amplification de la sortie du LM35) tout en restant dans la plage de conversion du CAN de l'Arduino Uno. Cette solution nécessite l'ajout d'un amplificateur ainsi que le réglage correcte de son amplification.</li>
+<li>Abaisser la tension de référence du CAN tout en conservant la plage de mesure. Cette solution est plus simple car il suffit d'ajouter une ligne de programmation.<blockquote>
+<p><a href="https://docs.arduino.cc/language-reference/en/functions/analog-io/analogReference/" target="_blank">Arduino Docs - analogReference()</a></p>
+</blockquote>
+</li>
+</ol>
+<pre><code>- Ouvrir le fichier source Arduino.
+</code></pre>
+<blockquote>
+<p><a href="../files/arduino_source.zip" target="_blank">Fichier source Arduino</a></p>
+</blockquote>
+<ul>
+<li>Dans l'IDE Arduino cliquer sur <code>Croquis</code>-&gt; <code>Exporter les binaires compilés</code>, ce qui provoque la compilation et la génération du <code>fichier texte au format intel HEX</code> (représentant le programme en langage machine).</li>
+<li>Ce fichier se trouve au même endroit que votre programme Arduino.</li>
+<li>Dans Isis double-cliquer sur l'Arduino Uno et au niveau du champ <code>Program Files:</code> cliquer sur l'icône Ouvrir et sélectionner le <code>fichier HEX</code>.</li>
+</ul>
+<pre><code class="language-txt">- Lancer la simulation sous Isis.
+</code></pre>
+<blockquote>
+<p>L'afficheur affiche cette fois N et la température calculée.</p>
+</blockquote>
+<pre><code class="language-yxt">- Vérifier que la température affichée est proche de la température mesurée.
+- Vérifier que le thermomètre fonctionne toujours correctement dans la plage de mesure du cahier des charges.
+- Vérifier que l'affichage de la température évolue par &quot;bonds&quot; qui correspondent à la résolution du thermomètre calculée précédemment.
+</code></pre>
+<pre><code class="language-txt">- Modifier le programme précédent pour améliorer la résolution du thermomètre.
+</code></pre>
+<blockquote>
+<p><strong>Indice</strong> : il faudra tout d'abord modifier la tension de référence dans le <code>setup()</code> puis modifier le calcul de la température en conséquence dans le <code>loop()</code> (le quantum chamge).</p>
+</blockquote>
+<pre><code class="language-txt">- Simuler votre nouveau programme et vérifier que :
+    - l'affichage de la température est correct ;
+    - la résolution est meilleure.
+    Q11. Déterminer par simulation puis par calcul la nouvelle résolution obtenue.
+    Q12. Valider cette résolution par rapport à la précision du LM35.
+</code></pre>
+<p><br />
+<br /></p>
+<blockquote>
+<p><img alt="Creative Commons" src="../img/cc-by-nc-sa.png" />
+Auteur : Franck RIVIER - lycée Rouvière (TOULON)</p>
+</blockquote></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../search/main.js"></script>
+    </body>
+</html>

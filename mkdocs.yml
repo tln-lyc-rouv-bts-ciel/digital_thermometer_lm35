@@ -1,0 +1,9 @@
+site_name: Thermomètre numérique
+nav:
+  - Objectif: README.md
+  - Sujet: sujet.md  
+  - Ressources: ressources.md
+theme:     
+  # name: mkdocs
+  name: bootstrap386
+  
