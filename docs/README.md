@@ -42,10 +42,13 @@
 ├───arduino_source
 │      ├───arduino_source.ino
 ```
-> Modèle de compte-rendu : <a href="../files/CR-Ciel.odt" target="_blank">CR-Ciel.odt</a>.
+> Modèle de compte-rendu : <a href="./files/CR-Ciel.odt" target="_blank">CR-Ciel.odt</a>.
 
 <br />
 <br />
 
 > ![Creative Commons](img/cc-by-nc-sa.png)
-Auteur : Franck RIVIER - lycée Rouvière (TOULON)
+
+> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Termes de la licence</a>
+
+> Auteur : Franck RIVIER - lycée Rouvière (TOULON)

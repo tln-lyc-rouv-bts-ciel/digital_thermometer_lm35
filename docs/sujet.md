@@ -24,8 +24,8 @@
 
 # Étude du capteur
 
-    À partir de la documentation du LM35     
-        Q2. Relever la précision du LM35 pour une température ambiante
+    À partir de la documentation du LM35 :    
+        Q2. Relever la précision du LM35 pour une température ambiante (room temperature).
         Q3. Relever la précision du LM35 pour une plage de variation de la température comprise entre 0°C et 100°C.
         Q4. Relever la sensibilité du LM35 (en mV/°C).
 > <a href="../files/lm35.pdf" target="_blank">Documentation du lm35</a>
@@ -43,7 +43,7 @@
 # Formule de la tension
 > __Méthode__ : à partir de la sortie N du CAN on peut calculer une approximation de la tension Us présente en entrée du CAN : Us = N * q
 
-        Q6. Donner la formule de Us en fonction de N.   
+        Q6. Donner la formule de Us en fonction de N, Uref et n.   
 
 <br />
 
@@ -57,8 +57,8 @@
 # Calcul de la température
 > __Définition__ : la résolution est la plus petite variation de la mesure qui provoque un changement de 1 LSB en sortie du CAN.
 
-        Q8. Grâce aux deux formules précédente donner la formule qui permettra à l'arduino Uno de calculer la température en fonction de N.
-        Q9. En déduire la résolution du thermomètre en °C/LSB.
+        Q8. Grâce aux deux formules précédentes donner la formule qui permettra à l'Arduino Uno de calculer la température en fonction de N.
+        Q9. En déduire la valeur de la résolution du thermomètre en °C/LSB.
         Q10. Est-ce que cette résolution est satisfaisante (voir cahier des charges) ?
 
 <br />
@@ -105,11 +105,7 @@
 <br />
 
 > ![Creative Commons](img/cc-by-nc-sa.png)
-Auteur : Franck RIVIER - lycée Rouvière (TOULON)
 
+> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Termes de la licence</a>
 
-
-
-
-
-
+> Auteur : Franck RIVIER - lycée Rouvière (TOULON)

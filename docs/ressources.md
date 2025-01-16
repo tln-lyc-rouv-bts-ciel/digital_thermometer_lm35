@@ -16,4 +16,7 @@
 <br />
 
 > ![Creative Commons](img/cc-by-nc-sa.png)
-Auteur : Franck RIVIER - lycée Rouvière (TOULON)
+
+> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Termes de la licence</a>
+
+> Auteur : Franck RIVIER - lycée Rouvière (TOULON)
