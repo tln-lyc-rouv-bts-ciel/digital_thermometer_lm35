@@ -13,7 +13,7 @@
 ```txt
 - valider la résolution obtenue (calculée et simulée) par rapport à la précision du capteur.
 ```
-> Remarque : il faut que la résolution soit plus petite que la précision du capteur afin de bénéficier de cette précision.
+> Remarque : il faut que la résolution soit très inférieure à la précision du capteur afin de bénéficier de cette précision.
 
 > Pour plus d'informations cliquer sur le lien suivant : <a href="https://sensorpartners.com/fr/base-de-connaissances/resolution-et-precision-des-capteurs/" target="_blank">Sensor Partners</a>.
 
